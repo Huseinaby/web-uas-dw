@@ -1,0 +1,350 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap");
+
+* {
+  padding: o;
+  margin: auto;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+header {
+  width: 100%;
+  background-color: #001A30;
+  
+}
+
+main {
+  position: relative;
+}
+
+#nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+  margin: auto;
+  position: fixed;
+  background-image: linear-gradient(#001A30, #001B30);
+  z-index: 2;
+  height: 70px;
+  transition: top 0.3s ease-in-out;
+}
+
+nav ul li {
+  position: relative;
+  font-weight: bold;
+
+}
+
+nav ul li a::after {
+  content: "";
+  height: 3px;
+  width: 0;
+  background: #db0a40;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+nav ul {
+  display: flex;
+  margin-right: 100px;
+}
+
+#icon {
+  height: 40px;
+  margin-left: 80px;
+}
+
+li {
+  list-style: none;
+  margin: 0 20px;
+}
+
+li a {
+  color: white;
+  text-decoration: none;
+}
+
+.slideshow {
+  position: relative;
+}
+
+.slide {
+  overflow: hidden;
+  width: 100%;
+  top: -80px;
+  max-width: 1500px;
+  position: absolute;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+
+.slide.active {
+  opacity: 1;
+}
+
+.slideshow img {
+  width: 100%;
+}
+
+.slideshow .slide::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; 
+  height: 100%;
+  background: linear-gradient(to right, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+  z-index: 0;
+}
+
+
+.slide h1 {
+  color: white;
+  position: absolute;
+  bottom: 70px;
+  width: 450px;
+  left: 60px;
+  bottom: 150px;
+  z-index: 1;
+}
+
+.button {
+  background-color: #db0a40;
+  z-index: 1;
+  position: absolute;
+  color: white;
+  padding: 15px;
+  bottom: 70px;
+  left: 50px;
+  border-radius: 40px;
+  text-decoration: none;
+}
+
+.about {
+  position: relative;
+  top: 670px;
+}
+
+.about img {
+  height: 570px;
+}
+
+.about .block {
+  background-color: #001A30;
+  height: 570px;
+  width: 50%;
+  right: 0;
+  top: 0;
+  position: absolute;
+}
+
+
+.block h2 {
+  color: white;
+  margin: 50px 0 0 50px; 
+  font-weight: bold;
+}
+
+.block p {
+  width: 600px;
+  color: white;
+  margin : 20px 0 0 50px;
+  text-align: justify;
+}
+
+.car {
+  position: relative;
+}
+
+.car h2 {
+  position: absolute;
+  margin-top: 730px;
+  margin-left: 30px;
+  font-size: 50px;
+  font-weight: 300;
+  color: white;
+  z-index: 1;
+}
+
+.car img{
+  width: 100%;
+  position: absolute;
+  margin-top: 663px;
+  filter: brightness(70%);
+}
+
+.driver {
+  position: relative;
+  margin-top: 1030px;
+  display: flex;
+}
+
+
+.driver .card {
+  	width: 50%;
+}
+
+.driver img {
+  position: absolute;
+  width: 50%;
+  filter: brightness(70%);
+}
+
+.driver h2 {
+  position: absolute;
+  margin-top: -10px;
+  margin-left: 20px;
+  color: white;
+  font-size: 40px;
+  z-index: 1;
+}
+
+.driver img:hover {
+  filter: brightness(100%);
+  transition: 0.5s;
+}
+
+.name {
+  background-color: #001B30;
+  position: absolute;
+  height: 120px;
+  padding: 20px;
+  margin-top: 330px;
+  width: 0;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.card:hover .name {
+  width: 300px;
+  transition: 1s;
+}
+
+.shop {
+  position: relative;
+  height: 600px;
+  background-image: url('Image/Sc1.jpg');
+  margin-top: 450px;
+  overflow: hidden;
+}
+
+
+.sho-img {
+  height: 600px;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+.swiper {
+  width: 100%;
+  height: 350px;
+  margin-top: 30px;
+}
+
+.swiper-slide {
+  background: #DD003F;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.swiper-slide img {
+  display: block;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px ;
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.swiper-slide h3 {
+  color: white;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.sho-img h1 {
+  color: white;
+  margin-left: 520px;
+  margin-top: 90px;
+  font-weight: bold;
+}
+
+.see-more img {
+  color: white;
+  height: 100px;
+  margin-left: 50px;
+}
+
+.oracle {
+  display: flex;
+  background-color: #DD003F;
+}
+
+.partner img {
+  width: 50%;
+}
+
+.desc {
+  width: 50%;
+}
+
+.desc h2 {
+  color: white;
+  margin-left: 60px;
+  margin-bottom: 30px;
+}
+
+.desc  p {
+  width: 500px;
+  color: white;
+  margin-left: 60px;
+  text-align: justify;  
+}
+
+footer {
+  height: 300px;
+  background-color: #001B30;
+  margin-top: 0;
+}
+
+.social  {
+  padding: 60px 0 0 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.social li {
+  margin-top: 10px;
+  margin-left: 0;
+}
+
+footer hr {
+  margin-top: 50px;
+  height: 2px;
+  background-color: #DD003F;
+  border-style: hidden;
+}
+
+footer p {
+  margin-top: 10px;
+  color: white;
+  margin-left: 37%;
+}
+
+
+
+
+
+
