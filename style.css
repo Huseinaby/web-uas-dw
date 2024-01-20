@@ -233,6 +233,7 @@ li a {
   position: relative;
   height: 600px;
   background-image: url('Image/Sc1.jpg');
+  background-size:cover ;
   margin-top: 450px;
   overflow: hidden;
 }
@@ -343,7 +344,27 @@ footer p {
   margin-left: 37%;
 }
 
-
+@media only screen and (min-width: 1400px) {
+  .button {
+    background-color: #DD003F;
+    z-index: 1;
+    /* position: absolute; */
+    color: white;
+    padding: 15px;
+   margin-bottom: 100px;
+    left: 50px;
+    border-radius: 40px;
+    text-decoration: none;
+  }
+  .slide h1 {
+    color: white;
+    position: absolute;
+    width: 450px;
+    left: 60px;
+    margin-bottom: 100px;
+    z-index: 1;
+  }
+}
 
 
 
